@@ -1,38 +1,68 @@
 import badges from 'badge-maker';
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-  if (license === 'Apache License 2.0') {
-    return badges('Apache License 2.0');
-  }else if (license === 'GNU General Public License v3.0') {
-    return badges('GNU General Public License v3.0');
-  }else if (license === 'MIT License 2.0') {
-    return badges('MIT License 2.0');
-  }else if (license === 'BSD 2 - Clause "Simplified" License') {
-    return badges('BSD 2 - Clause "Simplified" License');
-  }else if (license === 'BSD 3 Clause "New" or "Revised" License') {
-    return badges('BSD 3 Clause "New" or "Revised" License');
-  }else if (license === 'Boost Software License') {
-    return badges('Boost Software License');
-  }else if (license === 'Creative Commons Zero v1.0 Universal') {
-    return badges('Creative Commons Zero v1.0 Universal');
-  }else if (license === 'Eclipse Public License 2.0') {
-    return badges('Eclipse Public License 2.0');
-  }else if (license === 'GNU General Public License') {
-    return badges('GNU General Public License');
-  }else if (license === 'GNU Affero General Public License v3.0') {
-    return badges('GNU Affero General Public License v3.0');
-  }else if (license === 'GNU Lesser General Public License v2.1') {
-    return badges('GNU Lesser General Public License v2.1');
-  }else if (license === 'Mozilla Public License 2.0') {
-    return badges('Mozilla Public License 2.0');
-  }else if (license === 'The Unlicense') {
-    return badges('The Unlicense');
-  }else if (license === 'None') {
-    return '';
-
-  }
-
+function renderLicenseBadge(license) {
+const mitLicense = {
+    name: 'MIT',
+    color: 'blue',
+}
+const apacheLicense = {
+    name: 'Apache',
+    color: 'red',
+}
+const gnuLicense = {
+    name: 'GNU',
+    color: 'green',
+}
+const bsdLicense = {
+    name: 'BSD',
+    color: 'orange',
+}
+const boostLicense = {
+    name: 'Boost',
+    color: 'yellow',
+}
+const creativeCommonsLicense = {
+    name: 'Creative Commons',
+    color: 'purple',
+}
+const eclipseLicense = {
+    name: 'Eclipse',
+    color: '#000000',
+}
+const mozillaLicense = {
+    name: 'Mozilla',
+    color: 'brightgreen',
+}
+const unLicense = {
+    name: 'Unlicense',
+    color: '#fff',
+}
+const noneLicense = {
+    name: 'None',
+}
+if (response === 'MIT') {
+    return badges(mitLicense);
+}else if (response === 'Apache') {
+    return badges(apacheLicense);
+}else if (response === 'GNU') {
+    return badges(gnuLicense);
+}else if (response === 'BSD') {
+    return badges(bsdLicense);
+}else if (response === 'Boost') {
+    return badges(boostLicense);
+}else if (response === 'Creative Commons') {
+    return badges(creativeCommonsLicense);
+}else if (response === 'Eclipse') {
+    return badges(eclipseLicense);
+}else if (response === 'Mozilla') {
+    return badges(mozillaLicense);
+}else if (response === 'Unlicense') {
+    return badges(unLicense);
+}else if (response === 'None') {
+    return badges('');
+}
+}
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
