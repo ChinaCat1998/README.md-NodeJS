@@ -16,6 +16,11 @@ const questions = [
         message: "Please give a brief description of your project.",
     },
     {
+        type:"input",
+        name: "TableOfContents",
+        message: "please provide a table of contents for your project.",
+    },
+    {
         type: "input",
         name: "installation",
         message: "What are the installation instructions for your project?",
@@ -53,8 +58,23 @@ JSON.stringify(questions);
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((answers) => {
-        console.log(answers);
-        writeFile(answers);
+        const response = 
+        `# ${answers.title}
+        ## Description
+        ${answers.description}
+        ## Table of Contents
+        ${answers.tableOfContents}
+        ## Installation
+        ${answers.installation}
+        ## Usage
+        ${answers.usage}
+        ## Contributors
+        ${answers.contributors}
+        ## License
+        ${answers.license}
+        `;
+        writeFile(response);
+        
     });
 
 }
