@@ -1,11 +1,10 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import fs from "fs";
-import prompt from "inquirer/lib/ui/prompt";
 
 // TODO: Create an array of questions for user input
 const questions = [
-    prompt([
+
     {
         type: "input",
         name:"title",
@@ -37,14 +36,14 @@ const questions = [
         message: "What license would you like to use?",
         choices: ["None","Apache License 2.0","GNU General Public License v3.0","MIT License 2.0","BSD 2 - Clause 'Simplified' License","BSD 3 Clause 'New' or 'Revised' License","Boost Software License","Creative Commons Zero v1.0 Universal","Eclipse Public License 2.0","GNU General Public License ","GNU Affero General Public License v3.0","GNU Lesser General Public License v2.1","Mozilla Public License 2.0","The Unlicense"],
     }
-],
+]
 // TODO: Create a function to write README file
-const writeToLog = (data) => {
+const writeToLog = (questions) => {
   fs.writeFile('README.md', data, (err) => {
-    err ? console.error(err) : console.log('Log created!');
+    err ? console.error(err) : console.log('Success! Your README.md file has been generated');
   });
 };
-
+JSON.stringify(questions);
 
 // TODO: Create a function to initialize app
 function init() {
