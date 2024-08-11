@@ -37,16 +37,25 @@ const questions = [
         choices: ["None","Apache License 2.0","GNU General Public License v3.0","MIT License 2.0","BSD 2 - Clause 'Simplified' License","BSD 3 Clause 'New' or 'Revised' License","Boost Software License","Creative Commons Zero v1.0 Universal","Eclipse Public License 2.0","GNU General Public License ","GNU Affero General Public License v3.0","GNU Lesser General Public License v2.1","Mozilla Public License 2.0","The Unlicense"],
     }
 ]
+const data = ('');
 // TODO: Create a function to write README file
-const writeToLog = (questions) => {
+const writeFile = (questions) => {
   fs.writeFile('README.md', data, (err) => {
     err ? console.error(err) : console.log('Success! Your README.md file has been generated');
   });
+
+fs.appendFile('README.md',`${questions}\n`, (err) => {
+    err ? console.error(err) : console.log('');
+});
 };
 JSON.stringify(questions);
 
 // TODO: Create a function to initialize app
 function init() {
+    inquirer.prompt(questions).then((answers) => {
+        console.log(answers);
+        writeFile(answers);
+    });
 
 }
 
