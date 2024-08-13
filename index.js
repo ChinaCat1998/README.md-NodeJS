@@ -3,6 +3,7 @@ import inquirer from "inquirer";
 import fs from "fs";
 
 // TODO: Create an array of questions for user input
+//Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 const questions = [
 
     {
@@ -29,18 +30,29 @@ const questions = [
         type: "input",
         name: "usage",
         message: "What is the usage information for your project?",
-    },
-    { 
-        type: "input",
-        name: "contributors",
-        message: "Who are the contributors to your project?",
-    },
+    },  
     {
         type: "list",
         name: "license",
         message: "What license would you like to use?",
-        choices: ["None","Apache License 2.0","GNU General Public License v3.0","MIT License 2.0","BSD 2 - Clause 'Simplified' License","BSD 3 Clause 'New' or 'Revised' License","Boost Software License","Creative Commons Zero v1.0 Universal","Eclipse Public License 2.0","GNU General Public License ","GNU Affero General Public License v3.0","GNU Lesser General Public License v2.1","Mozilla Public License 2.0","The Unlicense"],
+        choices: ["None","Apache License 2.0","GNU General Public License v3.0","MIT License 2.0"],
+    },
+    { 
+        type: "input",
+        name: "contributing",
+        message: "Who are the contributors to your project?",
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "What tests are included in your project?",
+    },
+    {
+        type: "input",
+        name: "questions",
+        message: "What questions do you have about your project?",
     }
+  
 ]
 const data = ('');
 // TODO: Create a function to write README file
@@ -73,11 +85,18 @@ ${answers.installation}
 ## Usage
 ${answers.usage}
 
+## License
+${answers.license}
+
 ## Contributors
 ${answers.contributors}
 
-## License
-${answers.license}
+## Tests
+${answers.tests}
+
+## Questions
+${answers.questions}
+
         `;
         writeFile(response);
         
