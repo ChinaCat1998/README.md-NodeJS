@@ -65,7 +65,7 @@ function init() {
         ${answers.description}
 
         ## Table of Contents
-        ${answers.tableOfContents}
+        ### ${answers.tableOfContents}
 
         ## Installation
         ${answers.installation}
@@ -75,7 +75,7 @@ function init() {
 
         ## Contributors
         ${answers.contributors}
-        
+
         ## License
         ${answers.license}
         `;
