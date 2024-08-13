@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import fs from "fs";
-
 // TODO: Create an array of questions for user input
 //Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 const questions = [
@@ -18,8 +17,9 @@ const questions = [
     },
     {
         type:"input",
-        name: "TableOfContents",
+        name: "tableOfContents",
         message: "please provide a table of contents for your project.",
+        
     },
     {
         type: "input",
