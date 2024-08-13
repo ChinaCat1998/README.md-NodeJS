@@ -60,16 +60,22 @@ function init() {
     inquirer.prompt(questions).then((answers) => {
         const response = 
         `# ${answers.title}
+
         ## Description
         ${answers.description}
+
         ## Table of Contents
         ${answers.tableOfContents}
+
         ## Installation
         ${answers.installation}
+
         ## Usage
         ${answers.usage}
+
         ## Contributors
         ${answers.contributors}
+        
         ## License
         ${answers.license}
         `;
