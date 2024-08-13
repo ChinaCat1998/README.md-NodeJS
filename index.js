@@ -59,25 +59,25 @@ JSON.stringify(questions);
 function init() {
     inquirer.prompt(questions).then((answers) => {
         const response = 
-        `# ${answers.title}
+`# ${answers.title}
 
-        ## Description
-        ${answers.description}
+## Description
+${answers.description}
 
-        ## Table of Contents
-        ### ${answers.tableOfContents}
+## Table of Contents
+### ${answers.tableOfContents}
 
-        ## Installation
-        ${answers.installation}
+## Installation
+${answers.installation}
 
-        ## Usage
-        ${answers.usage}
+## Usage
+${answers.usage}
 
-        ## Contributors
-        ${answers.contributors}
+## Contributors
+${answers.contributors}
 
-        ## License
-        ${answers.license}
+## License
+${answers.license}
         `;
         writeFile(response);
         
