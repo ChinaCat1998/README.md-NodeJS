@@ -2,24 +2,12 @@ import {makeBadge,ValidationError} from 'badge-maker';
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === "MIT License 2.0") {
-    return makeBadge({
-      label: "MIT",
-      message: "MIT",
-      color: "blue",
-    });
+  if (license === "MIT License") {
+    return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
   } else if (license === "Apache License 2.0") {
-    return makeBadge({
-      label: "Apache",
-      message: "Apache",
-      color: "red",
-    });
+    return "![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)";
   } else if (license === "GNU General Public License v3.0") {
-    return makeBadge({
-      label: "GNU",
-      message: "GNU",
-      color: "green",
-    });
+    return "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
   } else if (license === "None") {
     return "";
   }
@@ -28,18 +16,15 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
+const licenseBadges = {
+  "MIT License 2.0":"[![License: MIT]](https://opensource.org/licenses/MIT)",
+  "Apache License 2.0":"[![License](https://opensource.org/licenses/Apache-2.0)",
+  "GNU General Public License v3.0":"[![License: GPL v3]](https://opensource.org/licenses/GPL-3.0)",
+  "None":""
+}
+
 function renderLicenseLink(license) {
-  if (license === "MIT License 2.0") {
-    return "https://opensource.org/licenses/MIT";
-  } else if (license === "Apache License 2.0") {
-    return "https://opensource.org/licenses/Apache-2.0";
-  } else if (license === "GNU General Public License v3.0") {
-    return "https://opensource.org/licenses/GPL-3.0";
-  } else if (license === "None") {
-    return "";
-  }
-
-
+  return licenseBadges[license]||"";
 }
 
 
@@ -61,5 +46,4 @@ function generateMarkdown(data) {
 
 `;
 }
-
 export default generateMarkdown;
