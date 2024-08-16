@@ -24,7 +24,7 @@
 https://opensource.org/licenses/Apache-2.0
 This project is licensed under the Apache License 2.0 license.
 
-## Contributors
+## Contributing
   sdfghjkl
 
 ## Tests
