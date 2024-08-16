@@ -111,8 +111,9 @@ ${answers.tableOfContents
 
 ## Questions
   If you have any questions about the project, please reach out to:
-     -Email: ${answers.email}
-     -GitHub: ${answers.github} https://github.com/${answers.Github}
+
+  -Email: ${answers.email}
+  -GitHub: [${answers.github}] (https://github.com/${answers.Github})
 `;
 
 }
