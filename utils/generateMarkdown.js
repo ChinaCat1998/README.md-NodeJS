@@ -83,7 +83,8 @@ function renderLicenseSection(license) {
 
 // Function to generate markdown
 function generateMarkdown(answers) {
-  return `# ${answers.title} ${renderLicenseBadge(answers.license)}
+  return `# ${answers.title} 
+  ![License Badge](${renderLicenseBadge(answers.license)})
   
 ## Description
 ${answers.description}
