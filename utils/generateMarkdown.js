@@ -80,38 +80,40 @@ function renderLicenseSection(license) {
     return "";
   }
 }
-
 // Function to generate markdown
 function generateMarkdown(answers) {
   return `# ${answers.title} 
   ![License Badge](${renderLicenseBadge(answers.license)})
   
 ## Description
-${answers.description}
+  ${answers.description}
 
 ## Table of Contents
-${answers.tableOfContents}
+${answers.tableOfContents
+  .map((item) => `- [${item}](#${item.toLowerCase()})`)
+  .join("\n")}
 
 ## Installation
-${answers.installation}
+  ${answers.installation}  
 
 ## Usage
-${answers.usage}
+  ${answers.usage}
 
 ## License
-${renderLicenseSection(answers.license)}
+  \n${renderLicenseSection(answers.license)}
 
 ## Contributors
-${answers.contributors}
+  ${answers.contributors}
 
 ## Tests
-${answers.tests}
+  ${answers.tests}
 
 ## Questions
-If you have any questions about the project, please reach out to:
-- Email: ${answers.email}
-- GitHub: [${answers.Github}](https://github.com/${answers.Github})
+  If you have any questions about the project, please reach out to:
+    - Email: ${answers.email}
+    - GitHub: [${answers.Github}](https://github.com/${answers.Github})
 `;
+
 }
 
 renderLicenseBadge();
