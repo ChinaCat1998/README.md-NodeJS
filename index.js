@@ -22,6 +22,8 @@ const questions = [
     message:
       "Please select which sections you'd like to use in your Table of Contents.",
     choices: [
+      "Description",
+      "Table of Contents",
       "Installation",
       "Usage",
       "License",
@@ -87,12 +89,6 @@ const writeFile = (data) => {
     err ? console.error(err) : console.log('Success! Your README.md file has been generated');
   })};
 
-/*fs.appendFile('README.md',`${questions}\n`, (err) => {
-    err ? console.error(err) : console.log('');
-});
-};
-
-JSON.stringify(questions);*/
 
 // TODO: Create a function to initialize app
 function init() {

@@ -104,7 +104,7 @@ ${answers.tableOfContents
   \n${renderLicenseSection(answers.license)}
 
 ## Contributing
-  ${answers.contributors}
+  ${answers.contributing}
 
 ## Tests
   ${answers.tests}
