@@ -111,10 +111,10 @@ ${answers.tableOfContents
 
 ## Questions
   If you have any questions about the project, please reach out to:
-  
-    - Email: ${answers.email}
 
-    - GitHub: [(https://github.com/${answers.Github})
+     \nEmail: ${answers.email}
+
+     \nGitHub: [(https://github.com/${answers.Github})
 `;
 
 }
