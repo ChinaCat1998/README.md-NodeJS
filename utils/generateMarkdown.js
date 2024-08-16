@@ -82,7 +82,7 @@ function renderLicenseSection(license) {
 }
 // Function to generate markdown
 function generateMarkdown(answers) {
-  return `# ${answers.title} 
+  return `# ${answers.title} \n
   ![License Badge](${renderLicenseBadge(answers.license)})
   
 ## Description
@@ -109,9 +109,9 @@ ${answers.tableOfContents
   ${answers.tests}
 
 ## Questions
-  If you have any questions about the project, please reach out to:
-    - Email: ${answers.email}
-    - GitHub: [${answers.Github}](https://github.com/${answers.Github})
+  If you have any questions about the project, please reach out to:\n
+    - Email: ${answers.email}\n
+    - GitHub: [(https://github.com/${answers.Github})
 `;
 
 }
