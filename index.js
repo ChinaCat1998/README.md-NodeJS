@@ -54,12 +54,12 @@ const questions = [
   {
     type: "input",
     name: "contributing",
-    message: "Who are the contributors to your project?",
+    message: "What are the contribution guidlines for your project?",
   },
   {
     type: "input",
     name: "tests",
-    message: "What tests are included in your project?",
+    message: "What are the test instructions for your project?",
   },
   {
     type: "input",

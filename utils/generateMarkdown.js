@@ -103,7 +103,7 @@ ${answers.tableOfContents
 ## License
   \n${renderLicenseSection(answers.license)}
 
-## Contributors
+## Contributing
   ${answers.contributors}
 
 ## Tests
@@ -114,7 +114,7 @@ ${answers.tableOfContents
 
      Email: ${answers.email}
 
-     GitHub: [https://github.com/${answers.Github}]
+     GitHub: ([https://github.com/${answers.Github}])
 `;
 
 }
