@@ -88,48 +88,5 @@ inquirer.prompt(questions).then((answers) => {
   const markdownContent = generateMarkdown(answers);
   fs.writeFileSync("README.md", markdownContent);
 })};
-/*function init() {
-    inquirer.prompt(questions).then((answers) => {
-        console.log(answers);
-        const response = `# ${answers.title}
 
-## Description
-${answers.description}
-
-## Table of Contents
-### ${answers.tableOfContents}
-
-## Installation
-${answers.installation}
-
-## Usage
-${answers.usage}
-
-## License
-${answers.license}
-
-## Contributors
-${answers.contributors}
-
-## Tests
-${answers.tests}
-
-## Questions
-${answers.questions}
-${answers.email}
-${answers.Github}
-        `;
-    writeFile(response);
-
-}
-    )};
-// Function call to initialize app
-init();*/
-/*function init() {
-  inquirer.prompt(questions).then((answers) => {
-    const markdownContent = generateMarkdown(answers);
-
-    writeFile(markdownContent);
-  });
-}*/
 init();
