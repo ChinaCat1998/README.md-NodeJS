@@ -114,7 +114,7 @@ ${answers.tableOfContents
 
      Email: ${answers.email}
 
-     GitHub: [${answers.Github}(https://github.com/${answers.Github})]
+     GitHub: [${answers.github}](https://github.com/${answers.Github})
 `;
 
 }
