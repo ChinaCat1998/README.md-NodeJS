@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import fs from "fs";
-import generateMarkdown from "./utils/generateMarkdown";
-get (generateMarkdown)
+import generateMarkdown from "./utils/generateMarkdown.js";
+//get (generateMarkdown)
 // TODO: Create an array of questions for user input
 //Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 const questions = [
@@ -41,7 +41,7 @@ const questions = [
     },
     { 
         type: "input",
-        name: "contributing",
+        name: "contributors",
         message: "Who are the contributors to your project?",
     },
     {
@@ -52,12 +52,20 @@ const questions = [
     {
         type: "input",
         name: "questions",
-        message: "What questions do you have about your project?",
-        message: "What is your email address?",
-        message: "What is your GitHub username?",
-    }
-  
-]
+        message: "What questions do you have about your project?"
+
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "what is your email address?",
+    },
+    {
+        type: "input",
+        name: "Github",
+        message: "what is your Github username?"
+    },
+];
 
 
 
@@ -76,9 +84,14 @@ JSON.stringify(questions);
 
 // TODO: Create a function to initialize app
 function init() {
+inquirer.prompt(questions).then((answers) => {
+  const markdownContent = generateMarkdown(answers);
+  fs.writeFileSync("README.md", markdownContent);
+})};
+/*function init() {
     inquirer.prompt(questions).then((answers) => {
-        const response = 
-`# ${answers.title}
+        console.log(answers);
+        const response = `# ${answers.title}
 
 ## Description
 ${answers.description}
@@ -103,13 +116,20 @@ ${answers.tests}
 
 ## Questions
 ${answers.questions}
-
+${answers.email}
+${answers.Github}
         `;
-        writeFile(response);
-        
-    });
+    writeFile(response);
 
 }
-
+    )};
 // Function call to initialize app
+init();*/
+/*function init() {
+  inquirer.prompt(questions).then((answers) => {
+    const markdownContent = generateMarkdown(answers);
+
+    writeFile(markdownContent);
+  });
+}*/
 init();
