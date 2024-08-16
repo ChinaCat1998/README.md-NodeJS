@@ -110,11 +110,11 @@ ${answers.tableOfContents
   ${answers.tests}
 
 ## Questions
-  If you have any questions about the project, please reach out to:
+  If you have any questions about the project, please reach out to:\n
 
-     \nEmail: ${answers.email}
+     Email: ${answers.email}\n
 
-     \nGitHub: [(https://github.com/${answers.Github})
+     GitHub: [(https://github.com/${answers.Github})
 `;
 
 }
