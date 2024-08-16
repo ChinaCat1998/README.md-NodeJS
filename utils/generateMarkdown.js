@@ -112,7 +112,7 @@ ${answers.tableOfContents
 ## Questions
   If you have any questions about the project, please reach out to:
 
-     Email: ${answers.email}\n
+     Email: ${answers.email}
 
      GitHub: [https://github.com/${answers.Github}]
 `;
