@@ -1,4 +1,4 @@
-# Node.JS-Module 7 
+# Node.JS-Module-7  
 
   ![License Badge](https://img.shields.io/badge/License-MIT-red.svg)
   
@@ -7,6 +7,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Table of Contents](#table of contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -15,10 +16,10 @@
 - [Questions](#questions)
 
 ## Installation
-  Make an empty github repository without a README.md  or license selection. Clone down the repository. Next you will need to use npm init and add a .gitignore file. add node_modules/ and DS_Store/  so files will be untracked. Next install iquirer and badge-maker using npm i ... . Create prompts to use in the command line  and use writeFile to create a README.md file by importing inquirer , fa and  generateMarkdown from generateMarkdown.js. In generateMarkdown.js create a license badge function, license link function and a license section function. Along with a complete emcompassing function called generateMarkdown that is exported to index.js. Answer prompts in terminal , observe changes and save and commit changes to github.   
+    Make an empty github repository without a README.md  or license selection. Clone down the repository. Next you will need to use npm init and add a .gitignore file. add node_modules/ and DS_Store/  so files will be untracked. Next install iquirer and badge-maker using npm i ... . Create prompts to use in the command line  and use writeFile to create a README.md file by importing inquirer , fa and  generateMarkdown from generateMarkdown.js. In generateMarkdown.js create a license badge function, license link function and a license section function. Along with a complete emcompassing function called generateMarkdown that is exported to index.js. Answer prompts in terminal , observe changes and save and commit changes to github.     
 
 ## Usage
-  This is designed to create a README.md file from terminal using Node.js and JavaScript. 
+  This is designed to create a README.md file from terminal using Node.js and JavaScript
 
 ## License
   
@@ -35,5 +36,5 @@ This project is licensed under the MIT License 2.0 license.
 ## Questions
   If you have any questions about the project, please reach out to:
 
-  -Email: Tranqcalypso@gmail.com
+  -Email: tranqcalypso@gmail.com
   -GitHub: [undefined] (https://github.com/ChinaCat1998)
