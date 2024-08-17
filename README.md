@@ -39,5 +39,5 @@ This project is licensed under the MIT License 2.0 license.
   -GitHub: (https://github.com/ChinaCat1998)
 
 ## Walkthrough Video
-[](https://go.screenpal.com/watch/cZjbnHV9z7I)
-[](https://go.screenpal.com/watch/cZjbndV9z7D)
+(https://go.screenpal.com/watch/cZjbnHV9z7I)
+(https://go.screenpal.com/watch/cZjbndV9z7D)
