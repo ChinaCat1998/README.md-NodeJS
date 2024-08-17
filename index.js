@@ -23,7 +23,6 @@ const questions = [
       "Please select which sections you'd like to use in your Table of Contents.",
     choices: [
       "Description",
-      "Table of Contents",
       "Installation",
       "Usage",
       "License",

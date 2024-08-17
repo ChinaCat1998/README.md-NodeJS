@@ -113,7 +113,7 @@ ${answers.tableOfContents
   If you have any questions about the project, please reach out to:
 
   -Email: ${answers.email}
-  -GitHub: [${answers.github}] (https://github.com/${answers.Github})
+  -GitHub: (https://github.com/${answers.Github})
 `;
 
 }
