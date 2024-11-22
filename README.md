@@ -27,7 +27,7 @@ https://opensource.org/licenses/MIT
 This project is licensed under the MIT License 2.0 license.
 
 ## Contributing
-    Github, termnial, npm install iquirer and badge-maker, index.js, generateMarkdown.js, JavaScript, Node.JS, package. JSON, and the created README.md file are all necessary and important tools to be able to recreate this project. 
+    Github, terminal, npm install iquirer and badge-maker, index.js, generateMarkdown.js, JavaScript, Node.JS, package. JSON, and the created README.md file are all necessary and important tools to be able to recreate this project. 
 
 ## Tests
     Once you get the prompts to be fully functional console.log('')  as much as possible, seeing if your inout changes in the created README.md file, as well as using 'git add -A' and 'git commit -m ''' as much as possible to save your changes to github. This also benefits in seeing if the badges have properly rendered and improving the general layout of the page itself. 
@@ -37,10 +37,6 @@ This project is licensed under the MIT License 2.0 license.
 
   -Email: tranqcalypso@gmail.com
   -GitHub: (https://github.com/ChinaCat1998)
-
-## Walkthrough Video
-(https://go.screenpal.com/watch/cZjbnHV9z7I)
-(https://go.screenpal.com/watch/cZjbndV9z7D)
 
 ## Walkthrough Video
 (https://go.screenpal.com/watch/cZjbnHV9z7I)
